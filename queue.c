@@ -77,7 +77,7 @@ element_t *q_remove_head(struct list_head *head, char *sp, size_t bufsize)
         sp[bufsize - 1] = '\0';
     }
     list_del(&node->list);
-    return NULL;
+    return node;
 }
 
 /* Remove an element from tail of queue */
